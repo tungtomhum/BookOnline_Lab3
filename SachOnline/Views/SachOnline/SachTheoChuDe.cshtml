@@ -9,18 +9,16 @@
 <div class="row text-center">
     @foreach (var sach in Model)
     {
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 sp">
+        <div class="book-slide">
             <div class="thumbnail">
-                <img src="~/Images/@sach.AnhSp" alt="@sach.TenSach"
-                     class="img-responsive img-rounded imgbook size" />
+                <img src="~/Images/@sach.AnhSp" alt="Thumbnail Image 1" class="img-responsive img-rounded imgbook size">
                 <div class="caption">
                     <h4 class="ten">
-                        <a href="@Url.Action("ChiTietSach","SachOnline", new {id=sach.SachID})">@sach.TenSach</a>
+                        <a href="@Url.Action("ChiTietSach", "SachOnline", new { id = sach.SachID })">@sach.TenSach</a>
                     </h4>
                     <p>
                         <a href="@Url.Action("AddToCard","ShoppingCard") new {id = sach.SachID}" class="btn btn-primary" role="button">
-                            <span class="glyphicon glyphicon-shopping-card" aria-hidden="true"> </span>
-                            Add to Cart
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Add to Cart
                         </a>
                     </p>
                 </div>

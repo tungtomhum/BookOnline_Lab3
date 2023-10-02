@@ -43,7 +43,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <a href="~/SachOnline/Index" class="btn btn-outline-success">HOME</a>
+                <div>
+                    <a href="~/SachOnline/Index" class="btn btn-light">HOME</a>
+                    <a href="~/User/DangKy" class="btn btn-light">REGISTER</a>
+                    <a href="~/User/DangNhap" class="btn btn-light">LOGIN</a>
+                </div>
                 @Html.Action("ChuDePartial", "SachOnline")
                 @Html.Action("NhaXuatBanPartial", "SachOnline")
             </div>
